@@ -1,0 +1,225 @@
+/* Additional component-specific styles */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.nav-link:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .mobile-menu,
+    .slider-btn,
+    .slider-indicators {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    .timeline-card,
+    .advantage-card,
+    .product-card,
+    .testimonial-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-outline {
+        border-width: 2px;
+    }
+    
+    .advantage-card,
+    .product-card,
+    .testimonial-card {
+        border: 1px solid #000;
+    }
+    
+    .nav-link:hover,
+    .footer-nav a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1f2937;
+        color: #f9fafb;
+    }
+    
+    .navbar {
+        background-color: #111827;
+    }
+    
+    .nav-link {
+        color: #d1d5db;
+    }
+    
+    .nav-link:hover {
+        color: #10b981;
+    }
+    
+    .dropdown-menu,
+    .user-dropdown {
+        background-color: #374151;
+    }
+    
+    .dropdown-menu a,
+    .user-dropdown a {
+        color: #d1d5db;
+    }
+    
+    .dropdown-menu a:hover,
+    .user-dropdown a:hover {
+        background-color: #4b5563;
+    }
+    
+    .advantage-card,
+    .product-card,
+    .testimonial-card,
+    .timeline-card {
+        background-color: #374151;
+        color: #f9fafb;
+    }
+    
+    .advantages,
+    .testing-process,
+    .testimonials {
+        background-color: #111827;
+    }
+    
+    .footer {
+        background-color: #111827;
+    }
+    
+    .footer-bottom {
+        background-color: #374151;
+    }
+}
