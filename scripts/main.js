@@ -375,7 +375,7 @@ class iGenomicsApp {
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new iGenomicsApp();
+    window.iGenomicsApp = new iGenomicsApp();
 });
 
 // Handle page visibility changes
