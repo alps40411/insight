@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Malaysia i-genomics</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <img src="../../public/images/logo.png" alt="i-genomics" />
+                </a>
+
+                <div class="nav-links desktop-only">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gene-bank.html" class="nav-link">Gene Bank</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn">
+                            Genetic Testing
+                            <svg class="dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="genetic-testing.html">About Genetic Testing</a>
+                            <a href="products.html">Testing Products</a>
+                            <a href="promotions.html">Seasonal Promotions</a>
+                        </div>
+                    </div>
+                    <a href="research-services.html" class="nav-link">Research Services</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active">EN</button>
+                        <span>/</span>
+                        <button class="lang-btn">BM</button>
+                    </div>
+                    
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="login.html">Sign In</a>
+                            <a href="register.html">Create Account</a>
+                            <hr>
+                            <a href="profile.html">Profile</a>
+                            <a href="orders.html">Orders</a>
+                            <a href="reports.html">Test Reports</a>
+                            <a href="consultations.html">Consultations</a>
+                        </div>
+                    </div>
+                    
+                    <a href="cart.html" class="cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </a>
+                    
+                    <button class="mobile-menu-btn mobile-only">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Colored bar -->
+    <div class="colored-bar"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="about.html">About Us</a>
+            <a href="gene-bank.html">Gene Bank</a>
+            <div class="mobile-dropdown">
+                <span>Genetic Testing</span>
+                <div class="mobile-dropdown-content">
+                    <a href="genetic-testing.html">About Genetic Testing</a>
+                    <a href="products.html">Testing Products</a>
+                    <a href="promotions.html">Seasonal Promotions</a>
+                </div>
+            </div>
+            <a href="research-services.html">Research Services</a>
+            <a href="contact.html">Contact Us</a>
+            <hr>
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Create Account</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <div class="container">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
+                        <div class="h-1 w-24 bg-blue-600 mx-auto"></div>
+                    </div>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">
+                                    Category
+                                </label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="gene-bank">Gene Bank</option>
+                                    <option value="genetic-testing">Genetic Testing</option>
+                                    <option value="research">Research Services</option>
+                                    <option value="youth-camp">Youth Camp</option>
+                                    <option value="other">Other Inquiries</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">
+                                    Service
+                                </label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="health">Health Protection</option>
+                                    <option value="nutrition">Nutrition & Metabolism</option>
+                                    <option value="wellness">Mental Wellness</option>
+                                    <option value="youth">Youth Health</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">
+                                Full Name
+                            </label>
+                            <input
+                                type="text"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                required
+                            />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">
+                                Email Address
+                            </label>
+                            <input
+                                type="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                required
+                            />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">
+                                Message
+                            </label>
+                            <textarea
+                                rows="6"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button
+                                type="submit"
+                                class="bg-green-600 text-white px-8 py-3 rounded-full font-medium hover:bg-green-700 transition"
+                            >
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../public/images/logo.png" alt="i-genomics" />
+                </div>
+                
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                
+                <div class="footer-nav desktop-only">
+                    <a href="about.html">About Us</a>
+                    <div class="footer-nav-group">
+                        <a href="gene-bank.html">Gene Bank</a>
+                        <a href="genetic-testing.html">Genetic Testing</a>
+                        <a href="research-services.html">Research Services</a>
+                    </div>
+                    <a href="partner-institutions.html">Partner Institutions</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                
+                <div class="footer-nav-mobile mobile-only">
+                    <div class="footer-nav-grid">
+                        <a href="about.html">About Us</a>
+                        <a href="gene-bank.html">Gene Bank</a>
+                        <a href="genetic-testing.html">Genetic Testing</a>
+                        <a href="research-services.html">Research Services</a>
+                        <a href="partner-institutions.html">Partner Institutions</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>+60 3-1234 5678</p>
+                    <a href="mailto:service@i-genomics.com.my">service@i-genomics.com.my</a>
+                </div>
+                
+                <div class="footer-qr">
+                    <img src="../../public/images/QR-1.png" alt="QR Code" />
+                    <img src="../../public/images/QR-2.png" alt="QR Code" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Lot 123, Jalan Genomics, Taman Science, 50000 Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <style>
+        .contact-form {
+            padding: 4rem 0;
+        }
+        
+        .max-w-4xl {
+            max-width: 56rem;
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-12 {
+            margin-bottom: 3rem;
+        }
+        
+        .text-4xl {
+            font-size: 2.25rem;
+        }
+        
+        .font-bold {
+            font-weight: 700;
+        }
+        
+        .text-gray-800 {
+            color: #1f2937;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        
+        .h-1 {
+            height: 0.25rem;
+        }
+        
+        .w-24 {
+            width: 6rem;
+        }
+        
+        .bg-blue-600 {
+            background-color: #2563eb;
+        }
+        
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+        
+        .grid {
+            display: grid;
+        }
+        
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        
+        .gap-6 {
+            gap: 1.5rem;
+        }
+        
+        .block {
+            display: block;
+        }
+        
+        .text-gray-700 {
+            color: #374151;
+        }
+        
+        .font-medium {
+            font-weight: 500;
+        }
+        
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .w-full {
+            width: 100%;
+        }
+        
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .border {
+            border-width: 1px;
+            border-color: #d1d5db;
+        }
+        
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        
+        .focus\:ring-2:focus {
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+        }
+        
+        .focus\:ring-blue-500:focus {
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+        }
+        
+        .focus\:border-transparent:focus {
+            border-color: transparent;
+        }
+        
+        .bg-green-600 {
+            background-color: #16a34a;
+        }
+        
+        .text-white {
+            color: white;
+        }
+        
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        
+        .rounded-full {
+            border-radius: 9999px;
+        }
+        
+        .hover\:bg-green-700:hover {
+            background-color: #15803d;
+        }
+        
+        .transition {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        @media (min-width: 768px) {
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</body>
+</html>

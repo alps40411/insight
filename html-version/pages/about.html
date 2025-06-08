@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Malaysia i-genomics</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <img src="../../public/images/logo.png" alt="i-genomics" />
+                </a>
+
+                <div class="nav-links desktop-only">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gene-bank.html" class="nav-link">Gene Bank</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn">
+                            Genetic Testing
+                            <svg class="dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="genetic-testing.html">About Genetic Testing</a>
+                            <a href="products.html">Testing Products</a>
+                            <a href="promotions.html">Seasonal Promotions</a>
+                        </div>
+                    </div>
+                    <a href="research-services.html" class="nav-link">Research Services</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active">EN</button>
+                        <span>/</span>
+                        <button class="lang-btn">BM</button>
+                    </div>
+                    
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="login.html">Sign In</a>
+                            <a href="register.html">Create Account</a>
+                            <hr>
+                            <a href="profile.html">Profile</a>
+                            <a href="orders.html">Orders</a>
+                            <a href="reports.html">Test Reports</a>
+                            <a href="consultations.html">Consultations</a>
+                        </div>
+                    </div>
+                    
+                    <a href="cart.html" class="cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </a>
+                    
+                    <button class="mobile-menu-btn mobile-only">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Colored bar -->
+    <div class="colored-bar"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="about.html">About Us</a>
+            <a href="gene-bank.html">Gene Bank</a>
+            <div class="mobile-dropdown">
+                <span>Genetic Testing</span>
+                <div class="mobile-dropdown-content">
+                    <a href="genetic-testing.html">About Genetic Testing</a>
+                    <a href="products.html">Testing Products</a>
+                    <a href="promotions.html">Seasonal Promotions</a>
+                </div>
+            </div>
+            <a href="research-services.html">Research Services</a>
+            <a href="contact.html">Contact Us</a>
+            <hr>
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Create Account</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3>Choose Insight to See the Future</h3>
+                    <h6>Have INSIGHT to have a seeing into future.</h6>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-badge professional">Professional</div>
+                            <div class="feature-lines">
+                                <div class="line blue"></div>
+                                <div class="line blue"></div>
+                                <div class="line green"></div>
+                                <div class="line green"></div>
+                            </div>
+                            <p>A research team consisting of Malaysia's excellent doctors, biologists, and medical technologists provides the most professional genetic testing services.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-badge precision">Precision</div>
+                            <div class="feature-lines">
+                                <div class="line green"></div>
+                                <div class="line green"></div>
+                                <div class="line light-green"></div>
+                                <div class="line light-green"></div>
+                            </div>
+                            <p>High precision with up to 750,000 points, paired with advanced genomic databases, provides users with the best results.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-badge quality">High Quality</div>
+                            <div class="feature-lines">
+                                <div class="line light-green"></div>
+                                <div class="line light-green"></div>
+                                <div class="line orange"></div>
+                                <div class="line orange"></div>
+                            </div>
+                            <p>Professional R&D team conducts testing and analysis entirely in Malaysia.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-badge comprehensive">Comprehensive</div>
+                            <p>Excellent after-sales service and secure privacy protection provide users with comprehensive care.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="diagonal-overlay"></div>
+                    <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laboratory equipment" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Advantages Make Excellence</h2>
+                    <div class="accent-bar"></div>
+                </div>
+
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon icon-green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>High Precision</h3>
+                        <p>High precision with simultaneous detection of up to <span class="highlight">750,000 sites</span>!<br>The most comprehensive genetic testing available.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon icon-blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                            </svg>
+                        </div>
+                        <h3>Professional Reports</h3>
+                        <p>Highly professional R&D team with all testing and AI data analysis conducted <span class="highlight">in Malaysia</span>.<br>Reassuring, secure, and absolutely dedicated.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon icon-purple">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Comprehensive Service</h3>
+                        <p>The most comprehensive after-sales service. Local Malaysian doctors, biologists, and medical technologists provide <span class="highlight">complete report consultation and health management information</span>.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon icon-yellow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Privacy & Security</h3>
+                        <p>Safe <span class="highlight">privacy protection you can trust</span>.<br>We protect your data with absolute dedication for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="photo-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Laboratory Research" />
+                        <div class="gallery-overlay">
+                            <p>Laboratory Research</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=400" alt="DNA Analysis" />
+                        <div class="gallery-overlay">
+                            <p>DNA Analysis</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Medical Research" />
+                        <div class="gallery-overlay">
+                            <p>Medical Research</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/8851617/pexels-photo-8851617.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Team Collaboration" />
+                        <div class="gallery-overlay">
+                            <p>Team Collaboration</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/3912352/pexels-photo-3912352.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sample Analysis" />
+                        <div class="gallery-overlay">
+                            <p>Sample Analysis</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/8851633/pexels-photo-8851633.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Research Development" />
+                        <div class="gallery-overlay">
+                            <p>Research Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="team-banner">
+                    <hr class="team-divider">
+                    <h2>Our Team</h2>
+                    <p>Meet the experts behind our genetic innovation</p>
+                    <hr class="team-divider">
+                </div>
+
+                <!-- Executive Profile -->
+                <div class="executive-profile">
+                    <div class="executive-image">
+                        <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="General Manager" />
+                    </div>
+                    <div class="executive-info">
+                        <p class="executive-title">General Manager</p>
+                        <p class="executive-title-en">Chief Executive Officer</p>
+                        <h2>Sarah Wong</h2>
+                        <h3>WONG SARAH</h3>
+                    </div>
+                    <div class="executive-quote">
+                        <blockquote>"Giving every child a chance at a healthy future!"</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../public/images/logo.png" alt="i-genomics" />
+                </div>
+                
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                
+                <div class="footer-nav desktop-only">
+                    <a href="about.html">About Us</a>
+                    <div class="footer-nav-group">
+                        <a href="gene-bank.html">Gene Bank</a>
+                        <a href="genetic-testing.html">Genetic Testing</a>
+                        <a href="research-services.html">Research Services</a>
+                    </div>
+                    <a href="partner-institutions.html">Partner Institutions</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                
+                <div class="footer-nav-mobile mobile-only">
+                    <div class="footer-nav-grid">
+                        <a href="about.html">About Us</a>
+                        <a href="gene-bank.html">Gene Bank</a>
+                        <a href="genetic-testing.html">Genetic Testing</a>
+                        <a href="research-services.html">Research Services</a>
+                        <a href="partner-institutions.html">Partner Institutions</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>+60 3-1234 5678</p>
+                    <a href="mailto:service@i-genomics.com.my">service@i-genomics.com.my</a>
+                </div>
+                
+                <div class="footer-qr">
+                    <img src="../../public/images/QR-1.png" alt="QR Code" />
+                    <img src="../../public/images/QR-2.png" alt="QR Code" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Lot 123, Jalan Genomics, Taman Science, 50000 Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <style>
+        /* About page specific styles */
+        .about-hero {
+            background-color: white;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .hero-text {
+            width: 100%;
+            padding: 2.5rem 1.5rem;
+            background-color: white;
+        }
+        
+        .hero-text h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #166534;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-text h6 {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #15803d;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .feature-badge {
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 0 9999px 9999px 0;
+            display: inline-block;
+            margin-bottom: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            width: fit-content;
+        }
+        
+        .professional { background-color: #1e40af; }
+        .precision { background-color: #15803d; }
+        .quality { background-color: #16a34a; }
+        .comprehensive { background-color: #ea580c; }
+        
+        .feature-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 0.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .line {
+            height: 0.125rem;
+            width: 3rem;
+        }
+        
+        .line.blue { background-color: #1e40af; }
+        .line.green { background-color: #15803d; }
+        .line.light-green { background-color: #16a34a; }
+        .line.orange { background-color: #ea580c; }
+        
+        .feature-item p {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .hero-image {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .diagonal-overlay {
+            display: none;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-gallery {
+            padding: 4rem 0;
+        }
+        
+        .gallery-grid {
+            columns: 2;
+            gap: 1rem;
+            column-gap: 1rem;
+        }
+        
+        .gallery-item {
+            break-inside: avoid;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            group: hover;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay p {
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            padding: 1rem;
+        }
+        
+        .team-section {
+            padding: 4rem 0;
+            background-color: #f9fafb;
+        }
+        
+        .team-banner {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .team-divider {
+            border: none;
+            border-top: 1px solid #d1d5db;
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+        
+        .team-banner h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-banner p {
+            color: #6b7280;
+            font-size: 1.125rem;
+        }
+        
+        .executive-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .executive-image img {
+            border-radius: 50%;
+            width: 12rem;
+            height: 12rem;
+            object-fit: cover;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .executive-info {
+            text-align: center;
+        }
+        
+        .executive-title {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        .executive-info h2 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .executive-info h3 {
+            font-size: 1.25rem;
+            color: #374151;
+        }
+        
+        .executive-quote {
+            position: relative;
+            max-width: 28rem;
+        }
+        
+        .executive-quote blockquote {
+            font-size: 1.875rem;
+            color: #9ca3af;
+            font-style: italic;
+            line-height: 1.6;
+            position: relative;
+        }
+        
+        .executive-quote::before,
+        .executive-quote::after {
+            content: '"';
+            font-size: 5rem;
+            color: #e5e7eb;
+            opacity: 0.5;
+            position: absolute;
+        }
+        
+        .executive-quote::before {
+            top: -1.5rem;
+            left: -1.5rem;
+        }
+        
+        .executive-quote::after {
+            bottom: -1.5rem;
+            right: -1.5rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .gallery-grid {
+                columns: 3;
+            }
+            
+            .executive-profile {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .executive-info {
+                text-align: left;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-content {
+                flex-direction: row;
+            }
+            
+            .hero-text {
+                width: 50%;
+                padding: 4rem 3rem;
+            }
+            
+            .hero-image {
+                width: 50%;
+            }
+            
+            .diagonal-overlay {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 120%;
+                width: 20%;
+                background-color: white;
+                transform: rotate(12deg) translateX(-2.5rem) translateY(-2.5rem);
+                z-index: 10;
+            }
+            
+            .feature-item {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .feature-badge {
+                margin-bottom: 0;
+            }
+            
+            .gallery-grid {
+                columns: 4;
+            }
+        }
+    </style>
+</body>
+</html>
