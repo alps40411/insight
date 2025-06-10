@@ -1,6 +1,5 @@
 import React from 'react';
 import { Facebook, Instagram, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import logo from '/images/logo.png';
 import qr1 from '/images/QR-1.png';
 import qr2 from '/images/QR-2.png';
@@ -20,62 +19,62 @@ const Footer = () => {
           
           <div className="md:col-span-2">
             <div className="grid grid-cols-2 gap-2 text-left">
-              <Link to="/privacy" className="text-sm text-gray-600 hover:text-green-700">
+              {/* <a href="/privacy.html" className="text-sm text-gray-600 hover:text-green-700">
                 Privacy Policy
-              </Link>
-              <Link to="/terms" className="text-sm text-gray-600 hover:text-green-700">
+              </a> */}
+              <a href="/pages/terms/index.html" className="text-sm text-gray-600 hover:text-green-700">
                 Terms of Service
-              </Link>
+              </a>
             </div>
           </div>
           
           <div className="md:col-span-4 hidden md:block">
             <div className="grid grid-cols-5 gap-2 text-center">
-              <Link to="/about" className="text-sm text-gray-600 hover:text-green-700">
+              <a href="/pages/about/index.html" className="text-sm text-gray-600 hover:text-green-700">
                 About Us
-              </Link>
+              </a>
               <div className="col-span-2 border-x border-gray-300 px-2">
-                <Link to="/gene-bank" className="block text-sm text-gray-600 hover:text-green-700">
+                <a href="/pages/gene-bank/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                   Gene Bank
-                </Link>
-                <Link to="/genetic-testing" className="block text-sm text-gray-600 hover:text-green-700">
+                </a>
+                <a href="/pages/genetic-testing/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                   Genetic Testing
-                </Link>
-                <Link to="/research-services" className="block text-sm text-gray-600 hover:text-green-700">
+                </a>
+                <a href="/pages/research-services/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                   Research Services
-                </Link>
+                </a>
               </div>
-              <Link to="/partner-institutions" className="text-sm text-gray-600 hover:text-green-700">
+              <a href="/pages/partner-institutions/index.html" className="text-sm text-gray-600 hover:text-green-700">
                 Partner Institutions
-              </Link>
-              <Link to="/contact" className="text-sm text-gray-600 hover:text-green-700">
+              </a>
+              <a href="/pages/contact/index.html" className="text-sm text-gray-600 hover:text-green-700">
                 Contact Us
-              </Link>
+              </a>
             </div>
           </div>
           
           {/* Mobile links */}
           <div className="grid grid-cols-2 gap-2 md:hidden">
-            <Link to="/about" className="text-sm text-gray-600 hover:text-green-700">
+            <a href="/pages/about/index.html" className="text-sm text-gray-600 hover:text-green-700">
               About Us
-            </Link>
+            </a>
             <div>
-              <Link to="/gene-bank" className="block text-sm text-gray-600 hover:text-green-700">
+              <a href="/pages/gene-bank/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                 Gene Bank
-              </Link>
-              <Link to="/genetic-testing" className="block text-sm text-gray-600 hover:text-green-700">
+              </a>
+              <a href="/pages/genetic-testing/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                 Genetic Testing
-              </Link>
-              <Link to="/research-services" className="block text-sm text-gray-600 hover:text-green-700">
+              </a>
+              <a href="/pages/research-services/index.html" className="block text-sm text-gray-600 hover:text-green-700">
                 Research Services
-              </Link>
+              </a>
             </div>
-            <Link to="/partner-institutions" className="text-sm text-gray-600 hover:text-green-700">
+            {/* <a href="/pages/partner-institutions/index.html" className="text-sm text-gray-600 hover:text-green-700">
               Partner Institutions
-            </Link>
-            <Link to="/contact" className="text-sm text-gray-600 hover:text-green-700">
+            </a> */}
+            <a href="/pages/contact/index.html" className="text-sm text-gray-600 hover:text-green-700">
               Contact Us
-            </Link>
+            </a>
           </div>
           
           <div className="md:col-span-2">

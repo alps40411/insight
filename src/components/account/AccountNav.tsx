@@ -1,28 +1,28 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { User, ShoppingBag, FileText, MessageSquare } from 'lucide-react';
 
 const AccountNav = () => {
-  const location = useLocation();
+  // 獲取當前頁面路徑來判斷active狀態
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
 
   const links = [
     {
-      to: '/account/profile',
+      to: '/account-profile.html',
       icon: User,
       label: 'Profile'
     },
     {
-      to: '/account/orders',
+      to: '/account-orders.html',
       icon: ShoppingBag,
       label: 'Orders'
     },
     {
-      to: '/account/reports',
+      to: '/account-reports.html',
       icon: FileText,
       label: 'Reports'
     },
     {
-      to: '/account/consultations',
+      to: '/account-consultations.html',
       icon: MessageSquare,
       label: 'Consultations'
     }
@@ -33,12 +33,12 @@ const AccountNav = () => {
       <div className="flex flex-col md:flex-row">
         {links.map((link) => {
           const Icon = link.icon;
-          const isActive = location.pathname === link.to;
+          const isActive = currentPath === link.to;
           
           return (
-            <Link
+            <a
               key={link.to}
-              to={link.to}
+              href={link.to}
               className={`flex items-center px-6 py-3 ${
                 isActive 
                   ? 'text-blue-600 bg-blue-50 border-b-2 border-blue-600'
@@ -47,7 +47,7 @@ const AccountNav = () => {
             >
               <Icon className="h-5 w-5 mr-2" />
               {link.label}
-            </Link>
+            </a>
           );
         })}
       </div>

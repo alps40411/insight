@@ -1,14 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
-import { ShoppingCart, Plus, Minus } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 const CartPage = () => {
-  const navigate = useNavigate();
 
   const handleCheckout = () => {
-    navigate('/checkout');
+    window.location.href = '/checkout';
   };
 
   return (

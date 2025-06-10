@@ -1,12 +1,19 @@
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import { ShoppingCart, FileText } from 'lucide-react';
 
 const ProductDetailPage = () => {
-  const navigate = useNavigate();
-  const { id } = useParams();
+  // 從URL查詢參數獲取產品ID
+  const getProductIdFromURL = () => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('id');
+    }
+    return null;
+  };
+
+  const productId = getProductIdFromURL();
 
   // This would normally come from an API or database
   const product = {
@@ -69,13 +76,13 @@ const ProductDetailPage = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <button 
-                      onClick={() => navigate('/cart')}
+                    <a 
+                      href="/pages/cart/index.html"
                       className="flex-1 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2"
                     >
                       <ShoppingCart size={20} />
                       Add to Cart
-                    </button>
+                    </a>
                     <button className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-lg hover:bg-gray-200 transition flex items-center justify-center gap-2">
                       <FileText size={20} />
                       Sample Report
@@ -98,10 +105,10 @@ const ProductDetailPage = () => {
               <h2 className="text-2xl font-bold mb-6">Related Products</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedProducts.map(relatedProduct => (
-                  <div 
+                  <a 
                     key={relatedProduct.id}
-                    className="bg-white rounded-lg shadow overflow-hidden cursor-pointer"
-                    onClick={() => navigate(`/genetic-testing/products/${relatedProduct.id}`)}
+                    href={`/product-detail.html?id=${relatedProduct.id}`}
+                    className="bg-white rounded-lg shadow overflow-hidden cursor-pointer block"
                   >
                     <img
                       src={relatedProduct.image}
@@ -114,7 +121,7 @@ const ProductDetailPage = () => {
                         NT$ {relatedProduct.price.toLocaleString()}
                       </p>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

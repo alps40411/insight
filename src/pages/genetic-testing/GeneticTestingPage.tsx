@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import { CircleImage } from '../../components/genetic-testing/CircleImage';
@@ -9,12 +8,6 @@ import { SelfScreening } from '../../components/genetic-testing/SelfScreening';
 import Testimonials from '../../components/home/Testimonials';
 
 const GeneticTestingPage = () => {
-  const navigate = useNavigate();
-
-  const handleLearnMore = () => {
-    navigate('/genetic-testing/products');
-  };
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -31,7 +24,7 @@ const GeneticTestingPage = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Genetic Testing</h1>
               <p className="text-xl mb-8">Discover Your Genetic Profile</p>
               <button 
-                onClick={() => navigate('/genetic-testing/products')}
+                onClick={() => window.location.href = '/genetic-testing/products'}
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
               >
                 View Tests
@@ -65,7 +58,7 @@ const GeneticTestingPage = () => {
             description="Our genetic testing and reporting services include comprehensive packages for cancer screening, cardiovascular health, and degenerative diseases, along with specialized tests for those interested in specific aspects of their genetic profile."
             image="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg"
             color="blue"
-            onClick={() => navigate('/genetic-testing/products')}
+            onClick={() => window.location.href = '/genetic-testing/products'}
           />
 
           <PaperBlock
@@ -76,7 +69,7 @@ const GeneticTestingPage = () => {
             color="red"
             reverse
             showButton
-            onClick={() => navigate('/genetic-testing/products')}
+            onClick={() => window.location.href = '/genetic-testing/products'}
           />
 
           <PaperBlock
@@ -86,7 +79,7 @@ const GeneticTestingPage = () => {
             image="https://images.pexels.com/photos/3807738/pexels-photo-3807738.jpeg"
             color="green"
             showButton
-            onClick={() => navigate('/genetic-testing/products')}
+            onClick={() => window.location.href = '/genetic-testing/products'}
           />
         </section>
 

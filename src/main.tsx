@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import NavbarMPA from './components/common/NavbarMPA';
-import FooterMPA from './components/common/FooterMPA';
+import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 import HeroSlider from './components/home/HeroSlider';
 import CompanyValues from './components/home/CompanyValues';
 import Advantages from './components/home/Advantages';
@@ -14,7 +14,7 @@ import './index.css';
 const HomePageMPA = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <NavbarMPA />
+      <Navbar />
       <main className="flex-grow">
         <HeroSlider />
         <CompanyValues />
@@ -24,7 +24,7 @@ const HomePageMPA = () => {
         <Partners />
         <Testimonials />
       </main>
-      <FooterMPA />
+      <Footer />
     </div>
   );
 };

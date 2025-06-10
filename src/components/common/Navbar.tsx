@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X, User, ShoppingCart, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import logo from '/images/logo.png';
 
 const Navbar = () => {
@@ -11,49 +10,49 @@ const Navbar = () => {
     <>
       <div className="navbar shadow-sm bg-white">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-          <Link to="/" className="flex-shrink-0 w-32">
+          <a href="/index.html" className="flex-shrink-0 w-32">
             <img 
               src={logo} 
               alt="i-genomics" 
               className="w-full"
             />
-          </Link>
+          </a>
 
           <div className="hidden md:flex space-x-1 flex-grow justify-center">
-            <Link to="/about" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
+            <a href="/pages/about/index.html" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               About Us
-            </Link>
-            <Link to="/gene-bank" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
+            </a>
+            <a href="/pages/gene-bank/index.html" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               Gene Bank
-            </Link>
+            </a>
             <div className="relative group">
               <button className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700 flex items-center">
                 Genetic Testing <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute z-50 hidden group-hover:block bg-white shadow-lg rounded-md p-2 w-48">
-                <Link to="/genetic-testing" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
+                <a href="/pages/genetic-testing/index.html" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
                   About Genetic Testing
-                </Link>
-                <Link to="/genetic-testing/products" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
+                </a>
+                <a href="/pages/genetic-testing/products/index.html" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
                   Testing Products
-                </Link>
-                <Link to="/genetic-testing/promotions" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
+                </a>
+                <a href="/pages/genetic-testing/promotions/index.html" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded">
                   Seasonal Promotions
-                </Link>
+                </a>
               </div>
             </div>
-            <Link to="/research-services" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
+            <a href="/pages/research-services/index.html" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               Research Services
-            </Link>
+            </a>
             {/* <Link to="/partner-institutions" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               Partner Institutions
             </Link> */}
             {/* <Link to="/youth-camp" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               Youth Camp Registration
             </Link> */}
-            <Link to="/contact" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
+            <a href="/pages/contact/index.html" className="nav-link px-3 py-2 text-sm font-medium hover:text-green-700">
               Contact Us
-            </Link>
+            </a>
           </div>
 
           <div className="flex items-center space-x-3">
@@ -72,50 +71,50 @@ const Navbar = () => {
               </button>
               {showUserMenu && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-                  <Link 
-                    to="/account/login" 
+                  <a 
+                    href="/pages/account/login/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Sign In
-                  </Link>
-                  <Link 
-                    to="/account/register" 
+                  </a>
+                  <a 
+                    href="/pages/account/register/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Create Account
-                  </Link>
+                  </a>
                   <hr className="my-1" />
-                  <Link 
-                    to="/account/profile" 
+                  <a 
+                    href="/pages/account/profile/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Profile
-                  </Link>
-                  <Link 
-                    to="/account/orders" 
+                  </a>
+                  <a 
+                    href="/pages/account/orders/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Orders
-                  </Link>
-                  <Link 
-                    to="/account/reports" 
+                  </a>
+                  <a 
+                    href="/pages/account/reports/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Test Reports
-                  </Link>
-                  <Link 
-                    to="/account/consultations" 
+                  </a>
+                  <a 
+                    href="/pages/account/consultations/index.html" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Consultations
-                  </Link>
+                  </a>
                 </div>
               )}
             </div>
             
-            <Link to="/cart" className="hover:text-green-700">
+            <a href="/pages/cart/index.html" className="hover:text-green-700">
               <ShoppingCart className="h-6 w-6" />
-            </Link>
+            </a>
             <button 
               className="md:hidden focus:outline-none" 
               onClick={() => setIsOpen(!isOpen)}
@@ -139,57 +138,57 @@ const Navbar = () => {
           </div>
           
           <div className="flex flex-col space-y-4 mt-8">
-            <Link to="/about" className="px-3 py-2 text-lg font-medium">
+            <a href="/pages/about/index.html" className="px-3 py-2 text-lg font-medium">
               About Us
-            </Link>
-            <Link to="/gene-bank" className="px-3 py-2 text-lg font-medium">
+            </a>
+            <a href="/pages/gene-bank/index.html" className="px-3 py-2 text-lg font-medium">
               Gene Bank
-            </Link>
+            </a>
             <div className="px-3 py-2 text-lg font-medium">
               Genetic Testing
               <div className="ml-4 mt-2 flex flex-col space-y-2">
-                <Link to="/genetic-testing" className="text-sm py-1">
+                <a href="/pages/genetic-testing/index.html" className="text-sm py-1">
                   About Genetic Testing
-                </Link>
-                <Link to="/genetic-testing/products" className="text-sm py-1">
+                </a>
+                <a href="/pages/genetic-testing/products/index.html" className="text-sm py-1">
                   Testing Products
-                </Link>
-                <Link to="/genetic-testing/promotions" className="text-sm py-1">
+                </a>
+                <a href="/pages/genetic-testing/promotions/index.html" className="text-sm py-1">
                   Seasonal Promotions
-                </Link>
+                </a>
               </div>
             </div>
-            <Link to="/research-services" className="px-3 py-2 text-lg font-medium">
+            <a href="/pages/research-services/index.html" className="px-3 py-2 text-lg font-medium">
               Research Services
-            </Link>
-            <Link to="/partner-institutions" className="px-3 py-2 text-lg font-medium">
+            </a>
+            {/* <a href="/partner-institutions.html" className="px-3 py-2 text-lg font-medium">
               Partner Institutions
-            </Link>
-            <Link to="/youth-camp" className="px-3 py-2 text-lg font-medium">
+            </a>
+            <a href="/youth-camp.html" className="px-3 py-2 text-lg font-medium">
               Youth Camp Registration
-            </Link>
-            <Link to="/contact" className="px-3 py-2 text-lg font-medium">
+            </a> */}
+            <a href="/pages/contact/index.html" className="px-3 py-2 text-lg font-medium">
               Contact Us
-            </Link>
+            </a>
             <div className="border-t pt-4">
-              <Link to="/account/login" className="block px-3 py-2 text-lg font-medium">
+              <a href="/pages/account/login/index.html" className="block px-3 py-2 text-lg font-medium">
                 Sign In
-              </Link>
-              <Link to="/account/register" className="block px-3 py-2 text-lg font-medium">
+              </a>
+              <a href="/pages/account/register/index.html" className="block px-3 py-2 text-lg font-medium">
                 Create Account
-              </Link>
-              <Link to="/account/profile" className="block px-3 py-2 text-lg font-medium">
+              </a>
+              <a href="/pages/account/profile/index.html" className="block px-3 py-2 text-lg font-medium">
                 Profile
-              </Link>
-              <Link to="/account/orders" className="block px-3 py-2 text-lg font-medium">
+              </a>
+              <a href="/pages/account/orders/index.html" className="block px-3 py-2 text-lg font-medium">
                 Orders
-              </Link>
-              <Link to="/account/reports" className="block px-3 py-2 text-lg font-medium">
+              </a>
+              <a href="/pages/account/reports/index.html" className="block px-3 py-2 text-lg font-medium">
                 Test Reports
-              </Link>
-              <Link to="/account/consultations" className="block px-3 py-2 text-lg font-medium">
+              </a>
+              <a href="/pages/account/consultations/index.html" className="block px-3 py-2 text-lg font-medium">
                 Consultations
-              </Link>
+              </a>
             </div>
           </div>
         </div>

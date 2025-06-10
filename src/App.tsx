@@ -8,9 +8,9 @@ import ProductDetailPage from './pages/genetic-testing/ProductDetailPage';
 import PromotionsPage from './pages/genetic-testing/PromotionsPage';
 import GeneBank from './pages/GeneBank';
 import ResearchServices from './pages/ResearchServices';
-import YouthCamp from './pages/YouthCamp';
-import Contact from './pages/Contact';
-import PartnerInstitutions from './pages/PartnerInstitutions';
+// import YouthCamp from './pages/YouthCamp';
+import ContactPage from './pages/ContactPage';
+// import PartnerInstitutions from './pages/PartnerInstitutions';
 import TermsOfService from './pages/TermsOfService';
 import CartPage from './pages/cart/CartPage';
 import CheckoutPage from './pages/cart/CheckoutPage';
@@ -35,9 +35,9 @@ function App() {
         <Route path="/genetic-testing/promotions" element={<PromotionsPage />} />
         <Route path="/gene-bank" element={<GeneBank />} />
         <Route path="/research-services" element={<ResearchServices />} />
-        <Route path="/youth-camp" element={<YouthCamp />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/partner-institutions" element={<PartnerInstitutions />} />
+        {/* <Route path="/youth-camp" element={<YouthCamp />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
+        {/* <Route path="/partner-institutions" element={<PartnerInstitutions />} /> */}
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />

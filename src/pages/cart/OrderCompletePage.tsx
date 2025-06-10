@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Link } from 'lucide-react';
 
 const OrderCompletePage = () => {
   return (
@@ -37,18 +36,18 @@ const OrderCompletePage = () => {
             </div>
             
             <div className="flex justify-center gap-4">
-              <Link 
-                to="/"
+              <a 
+                href="/index.html"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
               >
                 Return Home
-              </Link>
-              <Link 
-                to="/account/orders"
+              </a>
+              <a 
+                href="/pages/account/orders/index.html"
                 className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition"
               >
                 View Orders
-              </Link>
+              </a>
             </div>
           </div>
         </div>

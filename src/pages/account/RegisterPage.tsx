@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 
 const RegisterPage = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -17,7 +15,7 @@ const RegisterPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Add registration logic here
-    navigate('/account/profile');
+    window.location.href = '/account/profile';
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -144,9 +142,9 @@ const RegisterPage = () => {
                   <input type="checkbox" className="form-checkbox" required />
                   <span className="ml-2 text-sm text-gray-600">
                     I agree to the{' '}
-                    <Link to="/terms" className="text-blue-600 hover:text-blue-800">
+                    <a href="/pages/terms/index.html" className="text-blue-600 hover:text-blue-800">
                       Terms of Service
-                    </Link>
+                    </a>
                   </span>
                 </div>
 
@@ -159,9 +157,9 @@ const RegisterPage = () => {
 
                 <div className="text-center text-sm text-gray-600">
                   Already have an account?{' '}
-                  <Link to="/account/login" className="text-blue-600 hover:text-blue-800">
+                  <a href="/pages/account/login/index.html" className="text-blue-600 hover:text-blue-800">
                     Sign in
-                  </Link>
+                  </a>
                 </div>
               </form>
             </div>

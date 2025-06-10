@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ProductsPageMPA from './ProductsPageMPA';
-import '../index.css';
+import ConsultationsPage from '../account/ConsultationsPage';
+import '../../index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ProductsPageMPA />
+    <ConsultationsPage />
   </React.StrictMode>
 ); 

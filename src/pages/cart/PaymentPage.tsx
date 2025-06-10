@@ -1,14 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import { CreditCard, Calendar, Lock } from 'lucide-react';
 
 const PaymentPage = () => {
-  const navigate = useNavigate();
-
   const handlePayment = () => {
-    navigate('/order-complete');
+    window.location.href = '/order-complete';
   };
 
   return (

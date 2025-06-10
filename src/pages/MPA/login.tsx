@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AboutPageMPA from './AboutPageMPA';
-import '../index.css';
+import LoginPage from '../account/LoginPage';
+import '../../index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AboutPageMPA />
+    <LoginPage />
   </React.StrictMode>
 ); 

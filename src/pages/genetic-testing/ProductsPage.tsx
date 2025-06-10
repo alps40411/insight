@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import { Search } from 'lucide-react';
@@ -70,7 +69,6 @@ const products = [
 ];
 
 const ProductsPage = () => {
-  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('health');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -145,13 +143,13 @@ const ProductsPage = () => {
                       <p className="text-gray-600 mb-4">NT$ {product.price.toLocaleString()}</p>
                       <div className="flex gap-2">
                         <button 
-                          onClick={() => navigate('/cart')}
+                          onClick={() => window.location.href = '/cart'}
                           className="flex-1 bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
                         >
                           Add to Cart
                         </button>
                         <button 
-                          onClick={() => navigate(`/genetic-testing/products/${product.id}`)}
+                          onClick={() => window.location.href = `/genetic-testing/products/${product.id}`}
                           className="flex-1 bg-gray-100 text-gray-700 py-2 rounded hover:bg-gray-200 transition"
                         >
                           Learn More

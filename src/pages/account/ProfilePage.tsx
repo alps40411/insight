@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import AccountNav from '../../components/account/AccountNav';
@@ -168,12 +167,12 @@ const ProfilePage = () => {
                   <p className="text-lg">Regular Member</p>
                   <p className="text-sm text-blue-200">Since March 2024</p>
                 </div>
-                <Link
-                  to="/account/upgrade"
+                <a
+                  href="#"
                   className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-lg font-medium hover:bg-yellow-400 transition"
                 >
                   Upgrade to VIP
-                </Link>
+                </a>
               </div>
             </div>
           </div>

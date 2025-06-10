@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 
 const LoginPage = () => {
-  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Add login logic here
-    navigate('/account/profile');
+    window.location.href = '/account/profile';
   };
 
   return (
@@ -58,9 +56,9 @@ const LoginPage = () => {
                     <input type="checkbox" className="form-checkbox" />
                     <span className="ml-2 text-sm text-gray-600">Remember me</span>
                   </label>
-                  <Link to="/account/forgot-password" className="text-sm text-blue-600 hover:text-blue-800">
+                  <a href="#" className="text-sm text-blue-600 hover:text-blue-800">
                     Forgot password?
-                  </Link>
+                  </a>
                 </div>
 
                 <button
@@ -72,9 +70,9 @@ const LoginPage = () => {
 
                 <div className="text-center text-sm text-gray-600">
                   Don't have an account?{' '}
-                  <Link to="/account/register" className="text-blue-600 hover:text-blue-800">
+                  <a href="/pages/account/register/index.html" className="text-blue-600 hover:text-blue-800">
                     Sign up
-                  </Link>
+                  </a>
                 </div>
               </form>
             </div>

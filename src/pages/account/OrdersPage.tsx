@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import AccountNav from '../../components/account/AccountNav';
@@ -82,19 +81,19 @@ const OrdersPage = () => {
                     </div>
 
                     <div className="mt-4 flex justify-end space-x-4">
-                      <Link
-                        to={`/account/orders/${order.id}`}
+                      <a
+                        href={`/account-order-details.html?id=${order.id}`}
                         className="text-blue-600 hover:text-blue-800"
                       >
                         View Details
-                      </Link>
+                      </a>
                       {order.status === 'Completed' && (
-                        <Link
-                          to={`/account/reports/${order.id}`}
+                        <a
+                          href={`/account-report-details.html?id=${order.id}`}
                           className="text-green-600 hover:text-green-800"
                         >
                           View Report
-                        </Link>
+                        </a>
                       )}
                     </div>
                   </div>
